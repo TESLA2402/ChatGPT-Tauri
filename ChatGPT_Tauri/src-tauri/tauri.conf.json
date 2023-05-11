@@ -65,13 +65,13 @@
         "resizable": true,
         "title": "chatgpt",
         "height": 600,
-        "width": 500,
+        "width": 800,
         "visible": false,
-        "hiddenTitle": true,
-        "decorations": false,
+        "hiddenTitle": false,
+        "decorations": true,
         "focus": true,
         "transparent": true,
-        "skipTaskbar": true,
+        "skipTaskbar": false,
         "alwaysOnTop": true
       }
     ],
