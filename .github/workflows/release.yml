@@ -53,6 +53,7 @@ jobs:
           cache-dependency-path: './ChatGPT_Tauri/package-lock.json'
           
       # - run: pnpm install --frozen-lockfile
+      - run: pnpm install typescript -g
           
       - name: 'Setup Rust'
         uses: dtolnay/rust-toolchain@stable
