@@ -50,6 +50,7 @@ jobs:
         with:
           node-version: 18
           cache: pnpm
+          cache-dependency-path: './ChatGPT_Tauri/package-lock.json'
           
       - run: pnpm install --frozen-lockfile
           
