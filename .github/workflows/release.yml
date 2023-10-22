@@ -59,12 +59,15 @@ jobs:
       - name: Install rust target
         run: rustup target add ${{ matrix.target }}
 
-      - run: pnpm build --target ${{ matrix.target }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          TAURI_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
-          TAURI_KEY_PASSWORD: ${{ secrets.TAURI_KEY_PASSWORD }}
-
+      # - run: pnpm build --target ${{ matrix.target }}
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     TAURI_PRIVATE_KEY: ${{ secrets.TAURI_PRIVATE_KEY }}
+      #     TAURI_KEY_PASSWORD: ${{ secrets.TAURI_KEY_PASSWORD }}
+      - uses: JonasKruckenberg/tauri-build@v1.2.2
+        id: tauri_build
+        with:
+          target: ${{ matrix.target }}
       - uses: actions/upload-artifact@v3
         if: matrix.os == 'ubuntu-latest'
         with:
