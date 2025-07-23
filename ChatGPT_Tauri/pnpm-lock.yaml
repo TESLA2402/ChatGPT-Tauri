@@ -35,13 +35,13 @@ importers:
         version: 18.0.6
       '@vitejs/plugin-react':
         specifier: ^3.0.0
-        version: 3.0.0(vite@4.5.5(@types/node@18.7.10))
+        version: 3.0.0(vite@4.5.14(@types/node@18.7.10))
       typescript:
         specifier: ^4.9.5
         version: 4.9.5
       vite:
-        specifier: ^4.5.5
-        version: 4.5.5(@types/node@18.7.10)
+        specifier: ^4.5.14
+        version: 4.5.14(@types/node@18.7.10)
 
 packages:
 
@@ -559,8 +559,8 @@ packages:
     resolution: {integrity: sha512-vbRorB5FUQWvla16U8R/qgaFIya2qGzwDrNmCZuYKrbdSUMG6I1ZCGQRefkRVhuOkIGVne7BQ35DSfo1qvJqFg==}
     engines: {node: '>=0.8.0'}
 
-  fsevents@2.3.2:
-    resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
+  fsevents@2.3.3:
+    resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
 
@@ -606,6 +606,11 @@ packages:
   ms@2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
 
+  nanoid@3.3.11:
+    resolution: {integrity: sha512-N8SpfPUnUp1bK+PMYW8qSWdl9U+wwNWI4QKxOYDy9JAro3WMX7p2OeVRF9v+347pnakNevPmiHhNmZ2HbFA76w==}
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+
   nanoid@3.3.8:
     resolution: {integrity: sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -635,8 +640,15 @@ packages:
   picocolors@1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
 
+  picocolors@1.1.1:
+    resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
+
   postcss@8.4.31:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
+    engines: {node: ^10 || ^12 || >=14}
+
+  postcss@8.5.6:
+    resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
 
   react-dom@18.2.0:
@@ -666,6 +678,10 @@ packages:
 
   source-map-js@1.0.2:
     resolution: {integrity: sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==}
+    engines: {node: '>=0.10.0'}
+
+  source-map-js@1.2.1:
+    resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
 
   streamsearch@1.1.0:
@@ -707,8 +723,8 @@ packages:
     peerDependencies:
       browserslist: '>= 4.21.0'
 
-  vite@4.5.5:
-    resolution: {integrity: sha512-ifW3Lb2sMdX+WU91s3R0FyQlAyLxOzCSCP37ujw0+r5POeHPwe6udWVIElKQq8gk3t7b8rkmvqC6IHBpCff4GQ==}
+  vite@4.5.14:
+    resolution: {integrity: sha512-+v57oAaoYNnO3hIu5Z/tJRZjq5aHM2zDve9YZ8HngVHbhk66RStobhb1sqPMIPEleV6cNKYK4eGrAbE9Ulbl2g==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -1112,14 +1128,14 @@ snapshots:
 
   '@types/scheduler@0.16.3': {}
 
-  '@vitejs/plugin-react@3.0.0(vite@4.5.5(@types/node@18.7.10))':
+  '@vitejs/plugin-react@3.0.0(vite@4.5.14(@types/node@18.7.10))':
     dependencies:
       '@babel/core': 7.21.5
       '@babel/plugin-transform-react-jsx-self': 7.21.0(@babel/core@7.21.5)
       '@babel/plugin-transform-react-jsx-source': 7.19.6(@babel/core@7.21.5)
       magic-string: 0.27.0
       react-refresh: 0.14.0
-      vite: 4.5.5(@types/node@18.7.10)
+      vite: 4.5.14(@types/node@18.7.10)
     transitivePeerDependencies:
       - supports-color
 
@@ -1193,7 +1209,7 @@ snapshots:
 
   escape-string-regexp@1.0.5: {}
 
-  fsevents@2.3.2:
+  fsevents@2.3.3:
     optional: true
 
   gensync@1.0.0-beta.2: {}
@@ -1223,6 +1239,8 @@ snapshots:
       '@jridgewell/sourcemap-codec': 1.4.15
 
   ms@2.1.2: {}
+
+  nanoid@3.3.11: {}
 
   nanoid@3.3.8: {}
 
@@ -1255,11 +1273,19 @@ snapshots:
 
   picocolors@1.0.0: {}
 
+  picocolors@1.1.1: {}
+
   postcss@8.4.31:
     dependencies:
       nanoid: 3.3.8
       picocolors: 1.0.0
       source-map-js: 1.0.2
+
+  postcss@8.5.6:
+    dependencies:
+      nanoid: 3.3.11
+      picocolors: 1.1.1
+      source-map-js: 1.2.1
 
   react-dom@18.2.0(react@18.2.0):
     dependencies:
@@ -1275,7 +1301,7 @@ snapshots:
 
   rollup@3.29.5:
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
 
   scheduler@0.23.0:
     dependencies:
@@ -1284,6 +1310,8 @@ snapshots:
   semver@6.3.1: {}
 
   source-map-js@1.0.2: {}
+
+  source-map-js@1.2.1: {}
 
   streamsearch@1.1.0: {}
 
@@ -1308,15 +1336,15 @@ snapshots:
     dependencies:
       browserslist: 4.21.5
       escalade: 3.1.1
-      picocolors: 1.0.0
+      picocolors: 1.1.1
 
-  vite@4.5.5(@types/node@18.7.10):
+  vite@4.5.14(@types/node@18.7.10):
     dependencies:
       esbuild: 0.18.20
-      postcss: 8.4.31
+      postcss: 8.5.6
       rollup: 3.29.5
     optionalDependencies:
       '@types/node': 18.7.10
-      fsevents: 2.3.2
+      fsevents: 2.3.3
 
   yallist@3.1.1: {}
